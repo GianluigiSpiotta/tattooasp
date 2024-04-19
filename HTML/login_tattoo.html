@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login_tattoo.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>
+            <a href="../index.html">
+                <img src="../FOTO/Logo.png" alt="Authentic Collection">
+            </a>
+        </h1>
+    </header>
+    <h1 class="text-center">Registrazione</h1>
+    <form class="formRegistrazione" action="../PHP/registrazione.php" method="POST" onsubmit="return validaForm()">
+		<label for="nome" class="col-one-half">
+			<span class="label-text">Nome</span>
+			<input type="text" id="nome" name="nome" placeholder="Inserisci nome">
+		</label>
+		<label for="cognome" class="col-one-half">
+			<span class="label-text">Cognome</span>
+			<input type="text" id="cognome" name="cognome" placeholder="Inserisci cognome">
+		</label>
+		<label for="email">
+			<span class="label-text">Email</span>
+			<input type="text" id="email" name="email" placeholder="Inserisci email">
+		</label>
+		<label for="password" class="password">
+			<span class="label-text">Password</span>
+			<button class="toggle-visibility" title="toggle password visibility" tabindex="-1">
+				<span class="glyphicon glyphicon-eye-close"></span>
+			</button>
+			<input type="password" id="password" name="password" placeholder="Inserisci password">
+		</label>
+        <div class="text-center">
+            <button class="submit" name="registrazione">Registrami</button>
+        </div>
+    </form>
+</div>
+<script src="../JAVASCRIPT/login_tattoo.js"></script>
+
+</body>
+</html>
